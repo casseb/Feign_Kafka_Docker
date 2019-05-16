@@ -2,6 +2,7 @@ HELP.md
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
+gradle
 
 ### STS ###
 .apt_generated
@@ -28,3 +29,7 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+src/main/resources/static/
+src/main/resources/templates/
+
