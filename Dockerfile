@@ -14,5 +14,4 @@ WORKDIR $APP_HOME
 #Copy executable jar file from the builder image
 COPY --from=builder /home/gradle/project/build/libs/*.jar app.jar
 
-ENTRYPOINT [ "java -Djava.security.egd=file:/dev/./urandom -jar app.jar" ]
-#ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar app.jar" ]
+ENTRYPOINT [ "sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar app.jar" ]
