@@ -18,4 +18,11 @@ public class EnderecoController {
         return enderecoService.getByCep(cep);
     }
 
+    @GetMapping("message/{cep}")
+    public Endereco messageGet(@PathVariable String cep){
+        Endereco endereco = enderecoService.getByCep(cep);
+        enderecoService.sendEnderecoMessage(endereco);
+        return endereco;
+    }
+
 }
