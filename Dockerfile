@@ -3,7 +3,7 @@ FROM gradle:jdk11 as builder
 COPY . /home/gradle/project
 USER root
 WORKDIR /home/gradle/project/
-RUN gradle clean build
+RUN gradle clean build --stacktrace
 
 
 FROM openjdk:11-slim as runtime

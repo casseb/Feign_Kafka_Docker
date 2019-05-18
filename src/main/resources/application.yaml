@@ -3,7 +3,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: kafka:9092
+          brokers: localhost:29092
       bindings:
         endereco-in:
           destination: endereco
