@@ -1,2 +1,2 @@
 kafka:
-  bootstrap-servers: ${spring.cloud.stream.kafka.binder.brokers}
+  bootstrap-servers: ${spring.embedded.kafka.brokers}
